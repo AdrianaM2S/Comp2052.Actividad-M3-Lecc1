@@ -106,6 +106,6 @@ input[type="password"] {
 }
 
 .error {
-  color: rgb(135, 0, 0);
+  color: rgb(121, 0, 0);
   font-weight: bolder;
 }

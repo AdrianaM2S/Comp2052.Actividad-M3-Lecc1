@@ -55,7 +55,7 @@ def login():
         
                         # The user or password given aren't in the database
         return render_template("error.html.jinja2", error_code=401, 
-                               error_message="Invalid Credentials (username or password is wrong)!"), 401
+                               error_message="Invalid Credentials (username or password is wrong)"), 401
     return render_template('login.html.jinja2')
 
 # Admin panel
