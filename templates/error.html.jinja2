@@ -1,0 +1,19 @@
+{% extends "base.html" %} 
+
+{% block title %}
+  Page Error {{ error_code }}
+{% endblock %}
+
+{% block content %}
+
+  <form method="GET" action="/login" class="process-form">
+  
+    <h2 class="title">Error {{ error_code }}</h2>
+
+    <p class="error">{{ error_message }}</p>
+
+    <a href="{{ url_for('login') }}" class="btn btn-secondary">Try again</a>
+    
+  </form>
+
+{% endblock %}
